@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        background: linear-gradient(90deg, #d4a44c, #ffa1dd);
+    }
+
+    h2 {
+        text-align: center;
+
+    }
+
+    label {
+        color: rgb(255, 255, 255);
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 300px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        font-size: 16px;
+    }
+
+    input[type="button"],
+    input[type="reset"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(255, 136, 0);
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    input[type="button"]:hover,
+    input[type="reset"]:hover {
+        background-color: rgb(212, 138, 1);
+    }
+
+    textarea {
+        height: 200px;
+        width: 650px;
+        resize: none;
+    }
+
+    textarea {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+
+<body>
+    <!-- Judul -->
+    <h2>Mie Ayam Fadqira</h2>
+    <!-- Formulir -->
+    <form>
+        <fieldset>
+            <p>
+                <label for="">Nama Pemesan</label>
+                <br>
+                <input type="text" placeholder="Masukkan Nama ">
+
+            </p>
+            <p>
+                <label for="">Jenis pesanan</label>
+                <br>
+                <select>
+                    <option disabled selected hidden>Makanan</option>
+                    <option>Mie Ayam</option>
+                    <option>Mie Pangsit</option>
+                    <option>Mie Sambal</option>
+                </select>
+                <select>
+                    <option disabled selected hidden>Minuman</option>
+                    <option>Teh Melati</option>
+                    <option>Teh Kurma</option>
+                    <option>Teh Kunyit</option>
+                    <option>Susu Coklat</option>
+                    <option>Susu Vanilla</option>
+                    <option>Matcha</option>
+                </select>
+            </p>
+            <p>
+                <label for="">Tanggal Pesan</label>
+                <br>
+                <input type="date">
+            </p>
+            <p>
+                <label for="">Metode Pembayaran</label>
+                <br>
+                <input type="radio" name="payment" value="Tunai"> Tunai
+                <input type="radio" name="payment" value="Transfer"> Transfer
+                <input type="radio" name="payment" value="Qris"> Qris
+                <input type="radio" name="payment" value="COD"> COD
+            </p>
+        </fieldset>
+        <br>
+        <input type="button" value="Pesan" onclick="alert('Ok Pesanan Anda Sedang Diproses')">
+        <input type="reset">
+    </form>
+    <br>
+    <form>
+        <textarea placeholder="Tulis Penilaianmu tenntang layanan kami"></textarea>
+        <br>
+        <br>
+        <input type="button" value="Kirim" onclick="alert('Terima Kasih Atas Penilaianmu')">
+        <input type="reset">
+
+    </form>
+</body>
+
+</html>
