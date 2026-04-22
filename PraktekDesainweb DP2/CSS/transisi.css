@@ -1,0 +1,16 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  transition:
+    width 0.5s,
+    background-color 1s;
+}
+
+div:hover {
+  width: 300px;
+  background-color: dodgerblue;
+}
